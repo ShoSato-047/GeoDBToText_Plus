@@ -129,7 +129,7 @@ software.
 
 <tr>
 <td>Output Formats</td>
-<td>CSV/text export</td>
+<td>CSV and JSON export</td>
 <td>CSV and JSON export</td>
 </tr>
 
@@ -165,6 +165,8 @@ must remain in the same folder.
 
   <li>
     Add the toolbox:
+    <br>
+    <code>Catalog → Toolboxes → Add Toolbox → GeoDBToText_Plus.atbx</code>
   </li>
 
   <li>
