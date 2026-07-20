@@ -1,4 +1,4 @@
-<h2>GeoDBToText_Plus</h2>
+<h1>GeoDBToText_Plus</h1>
 
 <p>
 GeoDBToText_Plus is an enhanced version of the original 
@@ -7,7 +7,7 @@ tool. It was redesigned to improve metadata preservation, support complex geodat
 and create more reliable non-proprietary text archives from ESRI File Geodatabases.
 </p>
 
-<h3>Purpose</h3>
+<h2>Purpose</h2>
 
 <p>
 The purpose of GeoDBToText_Plus is to convert ESRI File Geodatabases into portable, 
