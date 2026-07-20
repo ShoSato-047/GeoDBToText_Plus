@@ -16,7 +16,7 @@ archived and potentially reconstructed in the future without depending on propri
 software.
 </p>
 
-<h3>Motivation for GeoDBToText_Plus</h3>
+<h2>Motivation for GeoDBToText_Plus</h2>
 
 <ul>
   <li>
@@ -47,7 +47,7 @@ software.
 </ul>
 
 
-<h3>Improvements in GeoDBToText_Plus</h3>
+<h2>Improvements in GeoDBToText_Plus</h2>
 
 <ul>
   <li>
@@ -94,7 +94,7 @@ software.
 </ul>
 
 
-<h3>Workflow Comparison</h3>
+<h2>Workflow Comparison</h2>
 
 <table border="1">
 <tr>
@@ -145,7 +145,7 @@ software.
 
 
 
-<h2>How to Use GeoDBToText_Plus in ArcGIS Pro</h2>
+<h1>How to Use GeoDBToText_Plus in ArcGIS Pro</h1>
 
 <p>
 GeoDBToText_Plus is provided as an ArcGIS Pro Toolbox (<code>.atbx</code>). 
