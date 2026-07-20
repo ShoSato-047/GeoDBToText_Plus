@@ -142,17 +142,17 @@ software.
 </table>
 
 
+
+
+
 <h2>How to Use GeoDBToText_Plus in ArcGIS Pro</h2>
 
 <p>
-GeoDBToText_Plus is distributed as an ArcGIS Pro Script Tool. The toolbox 
-(<code>.atbx</code>) contains the tool definition and parameters, while the 
-Python script (<code>.py</code>) contains the processing logic.
-Both files must remain together for the tool to run correctly.
+GeoDBToText_Plus is provided as an ArcGIS Pro Toolbox (<code>.atbx</code>). 
+The toolbox contains the tool definition and automatically connects to the 
+included Python script. Both the <code>.atbx</code> and <code>.py</code> files 
+must remain in the same folder.
 </p>
-
-
-<h3>Option 1: Use the Provided Toolbox (.atbx)</h3>
 
 <ol>
   <li>
@@ -160,145 +160,22 @@ Both files must remain together for the tool to run correctly.
   </li>
 
   <li>
-    Open <b>ArcGIS Pro</b>.
+    Open <b>ArcGIS Pro</b> and open the <b>Catalog</b> pane.
   </li>
 
   <li>
-    Open the <b>Catalog</b> pane:
-    <br>
-    <code>Catalog → Toolboxes → Add Toolbox</code>
+    Add the toolbox:
   </li>
 
   <li>
-    Select:
-    <br>
-    <code>GeoDBToText_Plus.atbx</code>
+    Open <b>GeoDBToText_Plus</b> from the toolbox.
   </li>
 
   <li>
-    The tool will appear under the added toolbox.
-    Double-click the tool to open the parameter window.
-  </li>
-
-  <li>
-    Provide the input File Geodatabase:
-    <br><br>
-    <code>Input Geodatabase: C:\Data\Example.gdb</code>
+    Select the input File Geodatabase:
   </li>
 
   <li>
     Click <b>Run</b>.
   </li>
 </ol>
-
-
-<h3>Option 2: Create the Script Tool Manually</h3>
-
-<p>
-If the toolbox file is not included, the tool can be recreated manually in ArcGIS Pro.
-</p>
-
-<ol>
-  <li>
-    Create a new toolbox:
-    <br>
-    <code>
-    Catalog Pane → Folder → New → Toolbox
-    </code>
-  </li>
-
-  <li>
-    Right-click the toolbox and select:
-    <br>
-    <code>
-    Add → Script
-    </code>
-  </li>
-
-  <li>
-    Configure the script tool:
-    <br>
-    <br>
-    <b>Name:</b> GeoDBToText_Plus
-    <br>
-    <b>Label:</b> GeoDBToText_Plus
-  </li>
-
-  <li>
-    For the script file, select:
-    <br>
-    <code>
-    GeoDBToText_Plus.py
-    </code>
-  </li>
-
-  <li>
-    Add the required parameter:
-    <br><br>
-
-    <table border="1">
-      <tr>
-        <th>Parameter</th>
-        <th>Data Type</th>
-        <th>Direction</th>
-      </tr>
-
-      <tr>
-        <td>Input Geodatabase</td>
-        <td>Workspace</td>
-        <td>Input</td>
-      </tr>
-    </table>
-  </li>
-
-  <li>
-    Finish creating the script tool.
-  </li>
-
-  <li>
-    Run the tool and select the File Geodatabase you want to convert.
-  </li>
-</ol>
-
-
-<h3>Output</h3>
-
-<p>
-The tool creates CSV and JSON files in the same directory as the input 
-File Geodatabase. Outputs include:
-</p>
-
-<ul>
-  <li>File Geodatabase metadata</li>
-  <li>Feature Dataset metadata</li>
-  <li>Feature Class metadata</li>
-  <li>Feature Class attribute tables</li>
-  <li>Feature Class geometry as WKT</li>
-  <li>JSON feature exports</li>
-</ul>
-
-
-<h3>Example Workflow</h3>
-
-<pre>
-Input:
-    Example.gdb
-        |
-        ├── Roads
-        |
-        └── Transportation
-              |
-              └── Bridges
-
-
-Run GeoDBToText_Plus
-
-
-Output:
-    Example_metadata.csv
-    Roads.csv
-    Roads.json
-    Transportation_metadata.csv
-    Bridges.csv
-    Bridges.json
-</pre>
