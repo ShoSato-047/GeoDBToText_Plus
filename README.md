@@ -180,4 +180,8 @@ must remain in the same folder.
   <li>
     Click <b>Run</b>.
   </li>
+
+  <li>
+    The output .csv files will be located in the same folder as your input file geodatabase.
+  </li>
 </ol>
